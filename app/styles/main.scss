@@ -94,3 +94,7 @@ body {
     border-bottom: 0;
   }
 }
+
+.footer{
+  @include clearfix;
+}
