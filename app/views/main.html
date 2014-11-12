@@ -1,0 +1,26 @@
+<carousel interval="setInterval">
+  <slide ng-repeat="slide in slides" active="slide.active">
+    <img class="carousel-image" ng-src="{{slide.image}}" alt="">
+    <div class="carousel-caption">
+      <h2>{{slide.title}}</h2>
+      <p>{{slide.text}}</p>
+    </div>
+
+  </slide>
+</carousel>
+
+<div class="jumbotron">
+  <h2>Bienvenidos a Vida Sana</h2>
+  <p class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+</div>
+
+<div class="container-fluid">
+  <div class="row marketing">
+    <div class="col-md-4 text-center" ng-repeat="block in contenido">
+      <img class="img-circle" ng-src="{{block.img}}">
+      <h3>{{block.title}}</h3>
+      <p>{{block.summary}}</p>
+    </div>
+  </div>  
+</div>
+
